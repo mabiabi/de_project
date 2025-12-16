@@ -8,7 +8,7 @@ def convert_excel_to_csv(excel_path, output_path):
     print(f"Saving CSV file: {output_path}")
     df.to_csv(output_path, index=False)
 
-if name == "__main__":
+if __name__ == "__main__":
     excel_file = "/workspaces/de_project_1/data/raw/Online Retail.xlsx"
     csv_file = "/workspaces/de_project_1/data/raw/online_retail.csv"
 
