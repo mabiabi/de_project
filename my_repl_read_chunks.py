@@ -10,3 +10,7 @@ print(second_chunk.head(7))
 print("Displaing first 7 rows of the second chunk")
 
 # You can continue to get more chunks as needed
+
+# yes!
+# I had trouble understanding how to use the generator function
+# I had trouble to run this .py when it was in src/extract
