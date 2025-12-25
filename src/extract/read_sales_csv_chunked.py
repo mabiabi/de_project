@@ -12,9 +12,10 @@ def read_sales_csv_in_chunks(
 
     This simulates Spark-style partitioned reading.
     """
-
-    path = Path(file_path)
-
+    # print(file_path)
+    path = Path(file_path) # why use Path library?
+    # print(path)
+    
     if not path.exists():
         raise FileNotFoundError(f"CSV not found: {path}")
 
