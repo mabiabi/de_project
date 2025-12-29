@@ -19,8 +19,8 @@ def read_sales_csv_in_chunks(
     if not path.exists():
         raise FileNotFoundError(f"CSV not found: {path}")
 
-    print(f"📥 Reading CSV in chunks of {chunk_size:,} rows")
+    print(f"Reading CSV in chunks of {chunk_size:,} rows")
 
     for i, chunk in enumerate(pd.read_csv(path, chunksize=chunk_size)):
-        print(f"➡ Chunk {i + 1} loaded ({len(chunk):,} rows)")
+        print(f"Chunk {i + 1} loaded ({len(chunk):,} rows)")
         yield chunk
