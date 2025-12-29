@@ -2,7 +2,7 @@
 Data Engineering Sample Project For Learning And Fun
 
 
-## 1. making project structure
+## 1. Making Project Structure
 
 ```python
 /workspaces/de_project_1/
@@ -36,12 +36,12 @@ Raw data
    ↓
 [Analytics / BI]
 ```
-## 2. first etl module
+## 2. First ETL Module
 
-### file workings
+### 2.1. File Handling (Bash and Python)
 - Direct CSV download -> wget
 - real sales transactions dataset (500k+ rows)
-- Convert the Excel dataset → CSV
+- Convert the Excel dataset to CSV
 
 - ✔ raw data preserved
 - ✔ format standardized (CSV)
@@ -50,7 +50,7 @@ Raw data
 
 Now we move from files → pipelines.
 
-### STEP A — Create extraction module
+### 2.2 STEP A — Create Extraction Module
 
 - Read CSV in chunks (simulate Spark behavior).
 
@@ -72,7 +72,7 @@ how big data pipelines actually read files
 | Memory safety | chunksize   | distributed memory |
 
 
-### STEP B — Create clean transformations
+### 2.3. STEP B — Create Clean Transformations
 
 Next, we move into Silver layer transformations:
 
@@ -118,9 +118,9 @@ This gives us:
 - resumability
 - Spark-like behavior
 
-### STEP C — Load into your project’s silver zone
+### 2.4. STEP C — Load into your project’s silver zone
 
-### STEP D — Build aggregation jobs
+### 2.5. STEP D — Build aggregation jobs
 
 - sales per country
 
@@ -130,5 +130,5 @@ This gives us:
 
 - RFM scoring
 
-### STEP E — Eventually implement Spark-like mimic
+### 2.6. STEP E — Eventually implement Spark-like mimic
 
