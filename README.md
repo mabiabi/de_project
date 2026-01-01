@@ -118,6 +118,28 @@ This gives us:
 - resumability
 - Spark-like behavior
 
+Silver-layer rules
+
+For each chunk, we will:
+
+Drop rows with missing CustomerID
+
+Drop rows with Quantity ≤ 0
+
+Drop rows with UnitPrice ≤ 0
+
+Standardize column names (snake_case)
+
+Convert:
+
+InvoiceDate → datetime
+
+CustomerID → int
+
+Add a derived column:
+
+total_price = quantity * unit_price
+
 ### 2.4. STEP C — Load into your project’s silver zone
 
 ### 2.5. STEP D — Build aggregation jobs
