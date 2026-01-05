@@ -22,5 +22,7 @@ def read_sales_csv_in_chunks(
     print(f"Reading CSV in chunks of {chunk_size:,} rows")
 
     for i, chunk in enumerate(pd.read_csv(path, chunksize=chunk_size)):
+        # i <- index(0,1,...) / chunk <- one part of data / from enumerate function.
         print(f"Chunk {i + 1} loaded ({len(chunk):,} rows)")
+        # , in Format Spec - The Thousands Separator
         yield chunk
