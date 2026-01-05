@@ -25,5 +25,5 @@ def build_silver_layer():
         print(f"Written {len(cleaned):,} rows to silver layer")
         
 
-if __name__ == "__main__":
+if __name__ == "__main__": # what???
     build_silver_layer()
