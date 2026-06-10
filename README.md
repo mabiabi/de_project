@@ -1,4 +1,4 @@
-# de_project_1
+# de_project
 Data Engineering Sample Project For Learning.
 
 
