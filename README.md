@@ -1,5 +1,5 @@
 # de_project_1
-Data Engineering Sample Project For Learning And Fun
+Data Engineering Sample Project For Learning.
 
 
 ## 1. Making Project Structure
